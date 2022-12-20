@@ -31,6 +31,4 @@ jobs:
       run: dotnet nuget add source --username zagrebelin --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/SigmaGmbH/index.json"
     
     - name: publish
-      run: dotnet nuget push out_pack/*.nupkg --source "github"
-
-#    /home/pavel/Development/the_delneg/swisstronik/contrib/MoralisWeb3/web3-dotnet-sdk/.github/workflows/dotnet-desktop.yml
+      run: dotnet nuget push out_pack/*.nupkg --source "github" --api-key ${{ secrets.GITHUB_TOKEN }}
