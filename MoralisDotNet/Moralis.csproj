@@ -12,10 +12,10 @@
     <PackageProjectUrl>https://www.moralis.io</PackageProjectUrl>
     <Copyright>Copyright (c) 2022 Moralis</Copyright>
     <AssemblyOriginatorKeyFile>moralis_sdk.sn.snk</AssemblyOriginatorKeyFile>
-    <FileVersion>2.0.7</FileVersion>
-	<Version>2.0.7-beta</Version>
-    <AssemblyVersion>2.0.7</AssemblyVersion>
-    <RepositoryUrl>https://github.com/MoralisWeb3/web3-dotnet-sdk</RepositoryUrl>
+    <FileVersion>2.0.9</FileVersion>
+	<Version>2.0.9-beta</Version>
+    <AssemblyVersion>2.0.9</AssemblyVersion>
+    <RepositoryUrl>https://github.com/SigmaGmbH/moralis-web3-dotnet-sdk</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageReleaseNotes>Implement Moralis Streams API.</PackageReleaseNotes>
@@ -35,10 +35,6 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
-    <PackageReference Include="Vsxmd" Version="1.4.5">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
