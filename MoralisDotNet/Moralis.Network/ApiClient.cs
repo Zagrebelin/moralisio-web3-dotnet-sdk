@@ -105,54 +105,41 @@ namespace Moralis.Network
             }
 
             HttpClient client = HttpClientBuilder is null ? new HttpClient() : HttpClientBuilder();
-            client.BaseAddress = new Uri(BasePath);
-
-            if (DefaultHeader != null)
+            if (client.BaseAddress == null)
             {
-                foreach (string k in DefaultHeader.Keys)
+                client.BaseAddress = new Uri(BasePath);
+
+                if (DefaultHeader != null)
                 {
-                    client.DefaultRequestHeaders.Add(k, DefaultHeader[k]);
+                    foreach (string k in DefaultHeader.Keys)
+                    {
+                        client.DefaultRequestHeaders.Add(k, DefaultHeader[k]);
+                    }
                 }
             }
-
-            if (headerParams != null)
-            {
-                foreach (string k in headerParams.Keys)
-                {
-                    client.DefaultRequestHeaders.Add(k, headerParams[k]);
-                }
-            }
-
+            
             // The HttpClient strips out the Local path from domain. 
             // Re-add this to the url so it is included properly.
             if (!client.BaseAddress.LocalPath.Equals("/"))
             {
                 url = $"{client.BaseAddress.LocalPath}{url}";
             }
+            var request = new HttpRequestMessage(method, url);
 
-            if (HttpMethod.Get.Equals(method))
+            if (headerParams != null)
             {
-                response = await client.GetAsync(url);
+                foreach (string k in headerParams?.Keys)
+                {
+                    request.Headers.Add(k, headerParams[k]);
+                }
             }
-            else if (HttpMethod.Post.Equals(method))
+
+            if (HttpMethod.Post.Equals(method) || HttpMethod.Put.Equals(method) || HttpMethod.Patch.Equals(method))
             {
-                var data = new StringContent(postBody, Encoding.UTF8, "application/json");
-                response = await client.PostAsync(url, data);
+                request.Content = new StringContent(postBody, Encoding.UTF8, "application/json");
             }
-            else if (HttpMethod.Delete.Equals(method))
-            {
-                response = await client.DeleteAsync(url);
-            }
-            else if (HttpMethod.Put.Equals(method))
-            {
-                var data = new StringContent(postBody, Encoding.UTF8, "application/json");
-                response = await client.PutAsync(url, data);
-            }
-            else if (HttpMethod.Patch.Equals(method))
-            {
-                var data = new StringContent(postBody, Encoding.UTF8, "application/json");
-                response = await client.PatchAsync(url, data);
-            }
+
+            response = await client.SendAsync(request);
 
             return response;
         }
