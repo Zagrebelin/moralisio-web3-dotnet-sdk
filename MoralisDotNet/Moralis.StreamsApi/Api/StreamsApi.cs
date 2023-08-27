@@ -403,8 +403,10 @@ namespace Moralis.StreamsApi.Api
 			// Authentication setting, if any
 			String[] authSettings = new String[] { "ApiKeyAuth" };
 
+			string bodyData = JsonConvert.SerializeObject(address);
+
 			HttpResponseMessage response =
-				await ApiClient.CallApi(path, HttpMethod.Delete, null, null, headerParams, null, null, authSettings);
+				await ApiClient.CallApi(path, HttpMethod.Delete, null, bodyData, headerParams, null, null, authSettings);
 
 			string data = await response.ExtractContentAsString();
 

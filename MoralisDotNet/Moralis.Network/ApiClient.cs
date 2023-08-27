@@ -134,7 +134,8 @@ namespace Moralis.Network
                 }
             }
 
-            if (HttpMethod.Post.Equals(method) || HttpMethod.Put.Equals(method) || HttpMethod.Patch.Equals(method))
+            if (HttpMethod.Post.Equals(method) || HttpMethod.Put.Equals(method) || HttpMethod.Patch.Equals(method)
+                || HttpMethod.Delete.Equals(method))
             {
                 request.Content = new StringContent(postBody, Encoding.UTF8, "application/json");
             }
