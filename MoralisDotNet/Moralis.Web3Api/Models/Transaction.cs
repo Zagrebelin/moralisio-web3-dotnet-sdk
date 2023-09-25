@@ -2,7 +2,9 @@ using System;
 using System.Text;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Runtime.Serialization;
+using Moralis.StreamsApi.Models;
 using Newtonsoft.Json;
 
 namespace Moralis.Web3Api.Models
@@ -148,6 +150,11 @@ namespace Moralis.Web3Api.Models
 		[DataMember(Name = "block_hash", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "block_hash")]
 		public string BlockHash { get; set; }
+
+		// internal transactions
+		[DataMember(Name="internal_transactions", EmitDefaultValue=false)]
+		[JsonProperty(PropertyName = "internal_transactions")]
+		public List<InternalTransactionTransfer> InternalTransactions { get; set; }
 
 
 		/// <summary>

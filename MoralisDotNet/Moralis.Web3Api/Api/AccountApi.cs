@@ -119,7 +119,9 @@ namespace Moralis.Web3Api.Api
 		/// <param name="offset">offset</param>
 		/// <param name="limit">limit</param>
 		/// <returns>Returns a collection of native transactions.</returns>
-		public async Task<TransactionCollection> GetTransactions (string address, ChainList chain, string cursor="", string subdomain=null, int? fromBlock=null, int? toBlock=null, string fromDate=null, string toDate=null, int? limit=null)
+		public async Task<TransactionCollection> GetTransactions(string address, ChainList chain, string cursor = "",
+			string subdomain = null, int? fromBlock = null, int? toBlock = null, string fromDate = null,
+			string toDate = null, int? limit = null, bool include_internal = false)
 		{
 
 			// Verify the required parameter 'address' is set
@@ -135,6 +137,8 @@ namespace Moralis.Web3Api.Api
 			path = path.Replace("{format}", "json");
 			path = path.Replace("{" + "address" + "}", ApiClient.ParameterToString(address));
 			queryParams.Add("chain", ApiClient.ParameterToHex((long)chain));
+			if (include_internal)
+				queryParams.Add("include", "internal_transactions");
 			if(subdomain != null) queryParams.Add("subdomain", ApiClient.ParameterToString(subdomain));
 			if(fromBlock != null) queryParams.Add("from_block", ApiClient.ParameterToString(fromBlock));
 			if(toBlock != null) queryParams.Add("to_block", ApiClient.ParameterToString(toBlock));
