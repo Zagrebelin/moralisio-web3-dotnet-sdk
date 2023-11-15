@@ -12,9 +12,9 @@
     <PackageProjectUrl>https://www.moralis.io</PackageProjectUrl>
     <Copyright>Copyright (c) 2022 Moralis</Copyright>
     <AssemblyOriginatorKeyFile>moralis_sdk.sn.snk</AssemblyOriginatorKeyFile>
-    <FileVersion>2.0.12</FileVersion>
-	<Version>2.0.12-beta</Version>
-    <AssemblyVersion>2.0.12</AssemblyVersion>
+    <FileVersion>2.0.13</FileVersion>
+	<Version>2.0.13-beta</Version>
+    <AssemblyVersion>2.0.13</AssemblyVersion>
     <RepositoryUrl>https://github.com/SigmaGmbH/moralis-web3-dotnet-sdk</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
