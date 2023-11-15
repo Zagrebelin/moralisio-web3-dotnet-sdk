@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "address", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "address")]
+        [System.Text.Json.Serialization.JsonPropertyName("address")]
 		public string Address { get; set; }
 
 

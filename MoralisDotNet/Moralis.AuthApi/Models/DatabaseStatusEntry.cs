@@ -13,6 +13,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "status", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "status")]
+        [System.Text.Json.Serialization.JsonPropertyName("status")]
         public string Status { get; set; }
     }
 }

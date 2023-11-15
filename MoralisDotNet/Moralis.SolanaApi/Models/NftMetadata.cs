@@ -35,22 +35,27 @@ namespace Moralis.SolanaApi.Models
     {
         [DataMember(Name = "mint", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "mint")]
+        [System.Text.Json.Serialization.JsonPropertyName("mint")]
         public string Mint { get; set; }
 
         [DataMember(Name = "standard", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "standard")]
+        [System.Text.Json.Serialization.JsonPropertyName("standard")]
         public string Standard { get; set; }
 
         [DataMember(Name = "name", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "name")]
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
         public string Name { get; set; }
 
         [DataMember(Name = "symbol", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "symbol")]
+        [System.Text.Json.Serialization.JsonPropertyName("symbol")]
         public string Symbol { get; set; }
 
         [DataMember(Name = "metaplex", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "metaplex")]
+        [System.Text.Json.Serialization.JsonPropertyName("metaplex")]
         public MetaplexNft Metaplex { get; set; }
     }
 }

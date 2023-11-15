@@ -15,6 +15,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "token_ids", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "token_ids")]
+        [System.Text.Json.Serialization.JsonPropertyName("token_ids")]
 		public List<object> TokenIds { get; set; }
 
 		/// <summary>
@@ -23,6 +24,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "from_address", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "from_address")]
+        [System.Text.Json.Serialization.JsonPropertyName("from_address")]
 		public string FromAddress { get; set; }
 
 		/// <summary>
@@ -31,6 +33,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "to_address", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "to_address")]
+        [System.Text.Json.Serialization.JsonPropertyName("to_address")]
 		public string ToAddress { get; set; }
 
 		/// <summary>
@@ -39,6 +42,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "value", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "value")]
+        [System.Text.Json.Serialization.JsonPropertyName("value")]
 		public string Value { get; set; }
 
 		/// <summary>
@@ -47,6 +51,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "gas", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "gas")]
+        [System.Text.Json.Serialization.JsonPropertyName("gas")]
 		public string Gas { get; set; }
 
 		/// <summary>
@@ -55,6 +60,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "gas_price", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "gas_price")]
+        [System.Text.Json.Serialization.JsonPropertyName("gas_price")]
 		public string GasPrice { get; set; }
 
 		/// <summary>
@@ -63,6 +69,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "receipt_cumulative_gas_used", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "receipt_cumulative_gas_used")]
+        [System.Text.Json.Serialization.JsonPropertyName("receipt_cumulative_gas_used")]
 		public string ReceiptCumulativeGasUsed { get; set; }
 
 		/// <summary>
@@ -71,6 +78,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "receipt_gas_used", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "receipt_gas_used")]
+        [System.Text.Json.Serialization.JsonPropertyName("receipt_gas_used")]
 		public string ReceiptGasUsed { get; set; }
 
 		/// <summary>
@@ -79,6 +87,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "block_number", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "block_number")]
+        [System.Text.Json.Serialization.JsonPropertyName("block_number")]
 		public string BlockNumber { get; set; }
 
 		/// <summary>
@@ -87,6 +96,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "block_timestamp", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "block_timestamp")]
+        [System.Text.Json.Serialization.JsonPropertyName("block_timestamp")]
 		public string BlockTimestamp { get; set; }
 
 		/// <summary>
@@ -95,6 +105,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "transaction_hash", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "transaction_hash")]
+        [System.Text.Json.Serialization.JsonPropertyName("transaction_hash")]
 		public string TransactionHash { get; set; }
 
 		/// <summary>
@@ -102,6 +113,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "transaction_index", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "transaction_index")]
+        [System.Text.Json.Serialization.JsonPropertyName("transaction_index")]
 		public string TransactionIndex { get; set; }
 
 

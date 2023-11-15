@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "timestamp", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "timestamp")]
+        [System.Text.Json.Serialization.JsonPropertyName("timestamp")]
 		public string Timestamp { get; set; }
 
 		/// <summary>
@@ -24,6 +25,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "number", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "number")]
+        [System.Text.Json.Serialization.JsonPropertyName("number")]
 		public string Number { get; set; }
 
 		/// <summary>
@@ -32,6 +34,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "hash", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "hash")]
+        [System.Text.Json.Serialization.JsonPropertyName("hash")]
 		public string Hash { get; set; }
 
 		/// <summary>
@@ -40,6 +43,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "parent_hash", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "parent_hash")]
+        [System.Text.Json.Serialization.JsonPropertyName("parent_hash")]
 		public string ParentHash { get; set; }
 
 		/// <summary>
@@ -48,6 +52,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "nonce", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "nonce")]
+        [System.Text.Json.Serialization.JsonPropertyName("nonce")]
 		public string Nonce { get; set; }
 
 		/// <summary>
@@ -55,6 +60,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "sha3_uncles", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "sha3_uncles")]
+        [System.Text.Json.Serialization.JsonPropertyName("sha3_uncles")]
 		public string Sha3Uncles { get; set; }
 
 		/// <summary>
@@ -62,6 +68,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "logs_bloom", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "logs_bloom")]
+        [System.Text.Json.Serialization.JsonPropertyName("logs_bloom")]
 		public string LogsBloom { get; set; }
 
 		/// <summary>
@@ -69,6 +76,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "transactions_root", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "transactions_root")]
+        [System.Text.Json.Serialization.JsonPropertyName("transactions_root")]
 		public string TransactionsRoot { get; set; }
 
 		/// <summary>
@@ -76,6 +84,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "state_root", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "state_root")]
+        [System.Text.Json.Serialization.JsonPropertyName("state_root")]
 		public string StateRoot { get; set; }
 
 		/// <summary>
@@ -83,6 +92,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "receipts_root", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "receipts_root")]
+        [System.Text.Json.Serialization.JsonPropertyName("receipts_root")]
 		public string ReceiptsRoot { get; set; }
 
 		/// <summary>
@@ -91,6 +101,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "miner", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "miner")]
+        [System.Text.Json.Serialization.JsonPropertyName("miner")]
 		public string Miner { get; set; }
 
 		/// <summary>
@@ -99,6 +110,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "difficulty", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "difficulty")]
+        [System.Text.Json.Serialization.JsonPropertyName("difficulty")]
 		public string Difficulty { get; set; }
 
 		/// <summary>
@@ -107,6 +119,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "total_difficulty", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "total_difficulty")]
+        [System.Text.Json.Serialization.JsonPropertyName("total_difficulty")]
 		public string TotalDifficulty { get; set; }
 
 		/// <summary>
@@ -115,6 +128,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "size", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "size")]
+        [System.Text.Json.Serialization.JsonPropertyName("size")]
 		public string Size { get; set; }
 
 		/// <summary>
@@ -122,6 +136,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "extra_data", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "extra_data")]
+        [System.Text.Json.Serialization.JsonPropertyName("extra_data")]
 		public string ExtraData { get; set; }
 
 		/// <summary>
@@ -130,6 +145,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "gas_limit", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "gas_limit")]
+        [System.Text.Json.Serialization.JsonPropertyName("gas_limit")]
 		public string GasLimit { get; set; }
 
 		/// <summary>
@@ -138,6 +154,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "gas_used", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "gas_used")]
+        [System.Text.Json.Serialization.JsonPropertyName("gas_used")]
 		public string GasUsed { get; set; }
 
 		/// <summary>
@@ -146,6 +163,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "transaction_count", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "transaction_count")]
+        [System.Text.Json.Serialization.JsonPropertyName("transaction_count")]
 		public string TransactionCount { get; set; }
 
 		/// <summary>
@@ -153,6 +171,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "transactions", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "transactions")]
+        [System.Text.Json.Serialization.JsonPropertyName("transactions")]
 		public List<BlockTransaction> Transactions { get; set; }
 
 

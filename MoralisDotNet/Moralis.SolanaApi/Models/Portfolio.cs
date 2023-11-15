@@ -36,14 +36,17 @@ namespace Moralis.SolanaApi.Models
     {
         [DataMember(Name = "nativeBalance", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "nativeBalance")]
+        [System.Text.Json.Serialization.JsonPropertyName("nativeBalance")]
         public NativeBalance NativeBalance { get; set; }
 
         [DataMember(Name = "nfts", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "nfts")]
+        [System.Text.Json.Serialization.JsonPropertyName("nfts")]
         public List<SplNft> Nfts { get; set; }
 
         [DataMember(Name = "tokens", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "tokens")]
+        [System.Text.Json.Serialization.JsonPropertyName("tokens")]
         public List<SplTokenBalanace> Tokens { get; set; }
     }
 }

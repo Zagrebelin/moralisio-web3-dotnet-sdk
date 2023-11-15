@@ -35,18 +35,22 @@ namespace Moralis.SolanaApi.Models
     {
         [DataMember(Name = "value", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "value")]
+        [System.Text.Json.Serialization.JsonPropertyName("value")]
         public string Value { get; set; }
 
         [DataMember(Name = "decimals", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "decimals")]
+        [System.Text.Json.Serialization.JsonPropertyName("decimals")]
         public int Decimals { get; set; }
 
         [DataMember(Name = "name", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "name")]
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
         public string Name { get; set; }
 
         [DataMember(Name = "symbol", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "symbol")]
+        [System.Text.Json.Serialization.JsonPropertyName("symbol")]
         public string Symbol { get; set; }
     }
 }

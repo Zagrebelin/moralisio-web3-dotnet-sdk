@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "token_address", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "token_address")]
+        [System.Text.Json.Serialization.JsonPropertyName("token_address")]
 		public string TokenAddress { get; set; }
 
 		/// <summary>
@@ -24,6 +25,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "name", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "name")]
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
 		public string Name { get; set; }
 
 		/// <summary>
@@ -31,6 +33,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "abi", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "abi")]
+        [System.Text.Json.Serialization.JsonPropertyName("abi")]
 		public string Abi { get; set; }
 
 		/// <summary>
@@ -38,6 +41,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "supports_token_uri", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "supports_token_uri")]
+        [System.Text.Json.Serialization.JsonPropertyName("supports_token_uri")]
 		public int? SupportsTokenUri { get; set; }
 
 		/// <summary>
@@ -45,6 +49,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "synced_at", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "synced_at")]
+        [System.Text.Json.Serialization.JsonPropertyName("synced_at")]
 		public string SyncedAt { get; set; }
 
 		/// <summary>
@@ -53,6 +58,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "symbol", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "symbol")]
+        [System.Text.Json.Serialization.JsonPropertyName("symbol")]
 		public string Symbol { get; set; }
 
 		/// <summary>
@@ -61,6 +67,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "contract_type", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "contract_type")]
+        [System.Text.Json.Serialization.JsonPropertyName("contract_type")]
 		public string ContractType { get; set; }
 
 

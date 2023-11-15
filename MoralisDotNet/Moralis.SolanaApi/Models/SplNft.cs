@@ -35,10 +35,12 @@ namespace Moralis.SolanaApi.Models
     {
         [DataMember(Name = "associatedTokenAddress", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "associatedTokenAddress")]
+        [System.Text.Json.Serialization.JsonPropertyName("associatedTokenAddress")]
         public string AssociatedTokenAddress { get; set; }
 
         [DataMember(Name = "mint", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "mint")]
+        [System.Text.Json.Serialization.JsonPropertyName("mint")]
         public string Mint { get; set; }
     }
 }

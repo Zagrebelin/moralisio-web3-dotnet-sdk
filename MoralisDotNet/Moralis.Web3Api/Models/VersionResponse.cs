@@ -7,6 +7,7 @@ namespace Moralis.Web3Api.Models
     {
         [DataMember(Name = "version", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "version")]
+        [System.Text.Json.Serialization.JsonPropertyName("version")]
         public string Version { get; set; }
     }
 }

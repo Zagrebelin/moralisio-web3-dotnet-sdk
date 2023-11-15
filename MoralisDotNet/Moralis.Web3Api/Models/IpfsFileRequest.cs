@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "path", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "path")]
+        [System.Text.Json.Serialization.JsonPropertyName("path")]
 		public string Path { get; set; }
 
 		/// <summary>
@@ -24,6 +25,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "content", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "content")]
+        [System.Text.Json.Serialization.JsonPropertyName("content")]
 		public string Content { get; set; }
 
 

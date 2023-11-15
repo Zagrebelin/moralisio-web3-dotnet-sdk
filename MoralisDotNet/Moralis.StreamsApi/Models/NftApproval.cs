@@ -8,10 +8,12 @@ namespace Moralis.StreamsApi.Models
     {
         [DataMember(Name = "ERC721", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "ERC721")]
+        [System.Text.Json.Serialization.JsonPropertyName("ERC721")]
         public List<NftApprovalErc721> ERC721 { get; set; }
 
         [DataMember(Name = "ERC1155", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "ERC1155")]
+        [System.Text.Json.Serialization.JsonPropertyName("ERC1155")]
         public List<NftApprovalErc1155> ERC1155 { get; set; }
     }
 }

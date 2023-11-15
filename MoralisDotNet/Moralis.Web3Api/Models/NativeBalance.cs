@@ -20,6 +20,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "balance", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "balance")]
+        [System.Text.Json.Serialization.JsonPropertyName("balance")]
 		public string Balance { get; set; }
 		
 		/// <summary>

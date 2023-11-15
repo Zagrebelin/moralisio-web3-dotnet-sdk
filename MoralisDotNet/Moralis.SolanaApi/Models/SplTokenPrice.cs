@@ -35,18 +35,22 @@ namespace Moralis.SolanaApi.Models
     {
         [DataMember(Name = "solana", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "solana")]
+        [System.Text.Json.Serialization.JsonPropertyName("solana")]
         public SplNativePrice nativePrice { get; set; }
 
         [DataMember(Name = "usdPrice", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "usdPrice")]
+        [System.Text.Json.Serialization.JsonPropertyName("usdPrice")]
         public double UsdPrice { get; set; }
 
         [DataMember(Name = "exchangeAddress", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "exchangeAddress")]
+        [System.Text.Json.Serialization.JsonPropertyName("exchangeAddress")]
         public double ExchangeAddress { get; set; }
 
         [DataMember(Name = "exchangeName", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "exchangeName")]
+        [System.Text.Json.Serialization.JsonPropertyName("exchangeName")]
         public double ExchangeName { get; set; }
     }
 }

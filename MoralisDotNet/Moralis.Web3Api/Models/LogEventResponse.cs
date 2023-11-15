@@ -10,18 +10,22 @@ namespace Moralis.Web3Api.Models
     {
         [DataMember(Name = "total", EmitDefaultValue = true)]
         [JsonProperty(PropertyName = "total")]
+        [System.Text.Json.Serialization.JsonPropertyName("total")]
         public long Total { get; set; }
 
         [DataMember(Name = "page", EmitDefaultValue = true)]
         [JsonProperty(PropertyName = "page")]
+        [System.Text.Json.Serialization.JsonPropertyName("page")]
         public long Page { get; set; }
 
         [DataMember(Name = "page_size", EmitDefaultValue = true)]
         [JsonProperty(PropertyName = "page_size")]
+        [System.Text.Json.Serialization.JsonPropertyName("page_size")]
         public long PageSize { get; set; }
 
         [DataMember(Name = "result", EmitDefaultValue = true)]
         [JsonProperty(PropertyName = "result")]
+        [System.Text.Json.Serialization.JsonPropertyName("result")]
         public List<LogEvent> Events { get; set; }
     }
 }

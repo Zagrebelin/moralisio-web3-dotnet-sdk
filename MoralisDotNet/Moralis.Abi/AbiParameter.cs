@@ -11,6 +11,8 @@ namespace Moralis.Abi
         /// </summary>
         [DataMember(Name = "indexed", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "indexed", NullValueHandling = NullValueHandling.Ignore)]
+        [System.Text.Json.Serialization.JsonPropertyName("indexed")]
+        [System.Text.Json.Serialization.JsonIgnore]
         public bool Indexed { get; set; }
 
         /// <summary>
@@ -18,6 +20,8 @@ namespace Moralis.Abi
         /// </summary>
         [DataMember(Name = "internalType", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "internalType", NullValueHandling = NullValueHandling.Ignore)]
+        [System.Text.Json.Serialization.JsonPropertyName("internalType")]
+        [System.Text.Json.Serialization.JsonIgnore]
         public string InternalType { get; set; }
 
         /// <summary>
@@ -25,6 +29,8 @@ namespace Moralis.Abi
         /// </summary>
         [DataMember(Name = "name", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "name", NullValueHandling = NullValueHandling.Ignore)]
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
+        [System.Text.Json.Serialization.JsonIgnore]
         public string Name { get; set; }
 
         /// <summary>
@@ -32,6 +38,8 @@ namespace Moralis.Abi
         /// </summary>
         [DataMember(Name = "type", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "type", NullValueHandling = NullValueHandling.Ignore)]
+        [System.Text.Json.Serialization.JsonPropertyName("type")]
+        [System.Text.Json.Serialization.JsonIgnore]
         public string Type { get; set; }
 
         /// <summary>
@@ -39,6 +47,8 @@ namespace Moralis.Abi
         /// </summary>
         [DataMember(Name = "components", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "components", NullValueHandling = NullValueHandling.Ignore)]
+        [System.Text.Json.Serialization.JsonPropertyName("components")]
+        [System.Text.Json.Serialization.JsonIgnore]
         public List<Component> Components { get; set; }
 
     }

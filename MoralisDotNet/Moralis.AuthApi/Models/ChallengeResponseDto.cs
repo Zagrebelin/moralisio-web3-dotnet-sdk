@@ -13,6 +13,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "id", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "id")]
+        [System.Text.Json.Serialization.JsonPropertyName("id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -20,6 +21,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "message", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "message")]
+        [System.Text.Json.Serialization.JsonPropertyName("message")]
         public string Message { get; set; }
 
         /// <summary>
@@ -27,6 +29,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "profileId", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "profileId")]
+        [System.Text.Json.Serialization.JsonPropertyName("profileId")]
         public string ProfileId { get; set; }
     }
 }

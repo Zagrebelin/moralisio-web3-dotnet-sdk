@@ -13,6 +13,7 @@ namespace Moralis.StreamsApi.Models
 
         [DataMember(Name = "region", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "region")]
+        [System.Text.Json.Serialization.JsonPropertyName("region")]
         public string Region
         {
             get { return region; }

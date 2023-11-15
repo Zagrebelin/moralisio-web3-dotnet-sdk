@@ -21,6 +21,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "transaction_hash", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "transaction_hash")]
+        [System.Text.Json.Serialization.JsonPropertyName("transaction_hash")]
 		public string TransactionHash { get; set; }
 
 		/// <summary>
@@ -28,6 +29,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "transaction_index", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "transaction_index")]
+        [System.Text.Json.Serialization.JsonPropertyName("transaction_index")]
 		public string TransactionIndex { get; set; }
 
 		/// <summary>
@@ -35,6 +37,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "token_ids", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "token_ids")]
+        [System.Text.Json.Serialization.JsonPropertyName("token_ids")]
 		public List<object> TokenIds { get; set; }
 
 		/// <summary>
@@ -43,6 +46,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "seller_address", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "seller_address")]
+        [System.Text.Json.Serialization.JsonPropertyName("seller_address")]
 		public string SellerAddress { get; set; }
 
 		/// <summary>
@@ -51,6 +55,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "buyer_address", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "buyer_address")]
+        [System.Text.Json.Serialization.JsonPropertyName("buyer_address")]
 		public string BuyerAddress { get; set; }
 
 		/// <summary>
@@ -59,6 +64,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "marketplace_address", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "marketplace_address")]
+        [System.Text.Json.Serialization.JsonPropertyName("marketplace_address")]
 		public string MarketplaceAddress { get; set; }
 
 		/// <summary>
@@ -67,6 +73,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "price", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "price")]
+        [System.Text.Json.Serialization.JsonPropertyName("price")]
 		public string Price { get; set; }
 
 		/// <summary>
@@ -75,6 +82,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "block_timestamp", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "block_timestamp")]
+        [System.Text.Json.Serialization.JsonPropertyName("block_timestamp")]
 		public string BlockTimestamp { get; set; }
 
 		/// <summary>
@@ -83,6 +91,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "block_number", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "block_number")]
+        [System.Text.Json.Serialization.JsonPropertyName("block_number")]
 		public string BlockNumber { get; set; }
 
 		/// <summary>
@@ -91,6 +100,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "block_hash", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "block_hash")]
+        [System.Text.Json.Serialization.JsonPropertyName("block_hash")]
 		public string BlockHash { get; set; }
 
 

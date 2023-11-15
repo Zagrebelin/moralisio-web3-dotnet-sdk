@@ -10,6 +10,8 @@ namespace Moralis.StreamsApi.Models
     {
         [DataMember(Name = "status", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "status", NullValueHandling = NullValueHandling.Ignore)]
+        [System.Text.Json.Serialization.JsonPropertyName("status")]
+        [System.Text.Json.Serialization.JsonIgnore]
 
         private string _streamStatus = null;
 

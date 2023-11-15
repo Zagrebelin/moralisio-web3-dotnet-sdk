@@ -13,6 +13,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "message", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "message")]
+        [System.Text.Json.Serialization.JsonPropertyName("message")]
         public string Message { get; set; }
 
         /// <summary>
@@ -20,6 +21,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "signature", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "signature")]
+        [System.Text.Json.Serialization.JsonPropertyName("signature")]
         public string Signature { get; set; }
     }
 }

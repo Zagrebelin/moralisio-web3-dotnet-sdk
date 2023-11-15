@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "reserve0", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "reserve0")]
+        [System.Text.Json.Serialization.JsonPropertyName("reserve0")]
 		public string Reserve0 { get; set; }
 
 		/// <summary>
@@ -24,6 +25,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "reserve1", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "reserve1")]
+        [System.Text.Json.Serialization.JsonPropertyName("reserve1")]
 		public string Reserve1 { get; set; }
 
 

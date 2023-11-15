@@ -13,6 +13,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "redis", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "redis")]
+        [System.Text.Json.Serialization.JsonPropertyName("redis")]
         public DatabaseStatusEntry Redis { get; set; }
     }
 }

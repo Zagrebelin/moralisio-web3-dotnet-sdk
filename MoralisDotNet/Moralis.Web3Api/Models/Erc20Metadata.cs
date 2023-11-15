@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "address", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "address")]
+        [System.Text.Json.Serialization.JsonPropertyName("address")]
 		public string Address { get; set; }
 
 		/// <summary>
@@ -24,6 +25,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "name", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "name")]
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
 		public string Name { get; set; }
 
 		/// <summary>
@@ -32,6 +34,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "symbol", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "symbol")]
+        [System.Text.Json.Serialization.JsonPropertyName("symbol")]
 		public string Symbol { get; set; }
 
 		/// <summary>
@@ -40,6 +43,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "decimals", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "decimals")]
+        [System.Text.Json.Serialization.JsonPropertyName("decimals")]
 		public string Decimals { get; set; }
 
 		/// <summary>
@@ -48,6 +52,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "logo", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "logo")]
+        [System.Text.Json.Serialization.JsonPropertyName("logo")]
 		public string Logo { get; set; }
 
 		/// <summary>
@@ -56,6 +61,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "logo_hash", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "logo_hash")]
+        [System.Text.Json.Serialization.JsonPropertyName("logo_hash")]
 		public string LogoHash { get; set; }
 
 		/// <summary>
@@ -64,18 +70,21 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "thumbnail", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "thumbnail")]
+        [System.Text.Json.Serialization.JsonPropertyName("thumbnail")]
 		public string Thumbnail { get; set; }
 
 		/// <summary>
 		/// </summary>
 		[DataMember(Name = "block_number", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "block_number")]
+        [System.Text.Json.Serialization.JsonPropertyName("block_number")]
 		public string BlockNumber { get; set; }
 
 		/// <summary>
 		/// </summary>
 		[DataMember(Name = "validated", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "validated")]
+        [System.Text.Json.Serialization.JsonPropertyName("validated")]
 		public string Validated { get; set; }
 
 

@@ -14,6 +14,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "nativePrice", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "nativePrice")]
+        [System.Text.Json.Serialization.JsonPropertyName("nativePrice")]
 		public NativeErc20Price NativePrice { get; set; }
 
 		/// <summary>
@@ -23,6 +24,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "usdPrice", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "usdPrice")]
+        [System.Text.Json.Serialization.JsonPropertyName("usdPrice")]
 		public decimal? UsdPrice { get; set; }
 
 		/// <summary>
@@ -31,6 +33,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "exchangeAddress", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "exchangeAddress")]
+        [System.Text.Json.Serialization.JsonPropertyName("exchangeAddress")]
 		public string ExchangeAddress { get; set; }
 
 		/// <summary>
@@ -39,6 +42,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "exchangeName", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "exchangeName")]
+        [System.Text.Json.Serialization.JsonPropertyName("exchangeName")]
 		public string ExchangeName { get; set; }
 
 

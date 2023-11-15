@@ -14,6 +14,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "id", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "id")]
+        [System.Text.Json.Serialization.JsonPropertyName("id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -21,6 +22,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "domain", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "domain")]
+        [System.Text.Json.Serialization.JsonPropertyName("domain")]
         public string Domain { get; set; }
 
         /// <summary>
@@ -28,6 +30,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "chainId", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "chainId")]
+        [System.Text.Json.Serialization.JsonPropertyName("chainId")]
         public long ChainId { get; set; }
 
         /// <summary>
@@ -35,6 +38,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "address", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "address")]
+        [System.Text.Json.Serialization.JsonPropertyName("address")]
         public string Address { get; set; }
 
         /// <summary>
@@ -42,6 +46,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "statement", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "statement")]
+        [System.Text.Json.Serialization.JsonPropertyName("statement")]
         public string Statement { get; set; }
 
         /// <summary>
@@ -49,6 +54,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "uri", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "uri")]
+        [System.Text.Json.Serialization.JsonPropertyName("uri")]
         public string Uri { get; set; }
 
         /// <summary>
@@ -56,6 +62,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "expirationTime", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "expirationTime")]
+        [System.Text.Json.Serialization.JsonPropertyName("expirationTime")]
         public DateTime? ExpirationTime { get; set; }
 
         /// <summary>
@@ -63,6 +70,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "notBefore", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "notBefore")]
+        [System.Text.Json.Serialization.JsonPropertyName("notBefore")]
         public DateTime? NotBefore { get; set; }
 
         /// <summary>
@@ -70,6 +78,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "resources", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "resources")]
+        [System.Text.Json.Serialization.JsonPropertyName("resources")]
         public string[] Resources { get; set; }
 
         /// <summary>
@@ -77,6 +86,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "version", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "version")]
+        [System.Text.Json.Serialization.JsonPropertyName("version")]
         public string Version { get; set; }
 
         /// <summary>
@@ -84,6 +94,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "nonce", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "nonce")]
+        [System.Text.Json.Serialization.JsonPropertyName("nonce")]
         public string Nonce { get; set; }
 
         /// <summary>
@@ -91,6 +102,7 @@ namespace Moralis.AuthApi.Models
         /// </summary>
         [DataMember(Name = "profileId", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "profileId")]
+        [System.Text.Json.Serialization.JsonPropertyName("profileId")]
         public string ProfileId { get; set; }
     }
 }

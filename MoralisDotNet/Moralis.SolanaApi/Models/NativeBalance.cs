@@ -35,10 +35,12 @@ namespace Moralis.SolanaApi.Models
     {
         [DataMember(Name = "solana", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "solana")]
+        [System.Text.Json.Serialization.JsonPropertyName("solana")]
         public string Solana { get; set; }
 
         [DataMember(Name = "lamports", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "lamports")]
+        [System.Text.Json.Serialization.JsonPropertyName("lamports")]
         public string Lamports { get; set; }
     }
 }

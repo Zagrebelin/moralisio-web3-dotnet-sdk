@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "token_address", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "token_address")]
+        [System.Text.Json.Serialization.JsonPropertyName("token_address")]
 		public string TokenAddress { get; set; }
 
 		/// <summary>
@@ -24,6 +25,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "name", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "name")]
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
 		public string Name { get; set; }
 
 		/// <summary>
@@ -32,6 +34,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "symbol", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "symbol")]
+        [System.Text.Json.Serialization.JsonPropertyName("symbol")]
 		public string Symbol { get; set; }
 
 		/// <summary>
@@ -40,6 +43,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "logo", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "logo")]
+        [System.Text.Json.Serialization.JsonPropertyName("logo")]
 		public string Logo { get; set; }
 
 		/// <summary>
@@ -48,6 +52,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "thumbnail", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "thumbnail")]
+        [System.Text.Json.Serialization.JsonPropertyName("thumbnail")]
 		public string Thumbnail { get; set; }
 
 		/// <summary>
@@ -56,6 +61,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "decimals", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "decimals")]
+        [System.Text.Json.Serialization.JsonPropertyName("decimals")]
 		public override int? Decimals { get; set; }
 
 		/// <summary>
@@ -64,6 +70,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "balance", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "balance")]
+        [System.Text.Json.Serialization.JsonPropertyName("balance")]
 		public string Balance { get; set; }
 
 		/// <summary>

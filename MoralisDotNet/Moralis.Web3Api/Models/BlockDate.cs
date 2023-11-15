@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "date", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "date")]
+        [System.Text.Json.Serialization.JsonPropertyName("date")]
 		public DateTime? Date { get; set; }
 
 		/// <summary>
@@ -24,6 +25,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "block", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "block")]
+        [System.Text.Json.Serialization.JsonPropertyName("block")]
 		public decimal? Block { get; set; }
 
 		/// <summary>
@@ -32,6 +34,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "timestamp", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "timestamp")]
+        [System.Text.Json.Serialization.JsonPropertyName("timestamp")]
 		public decimal? Timestamp { get; set; }
 
 

@@ -35,26 +35,32 @@ namespace Moralis.SolanaApi.Models
     {
         [DataMember(Name = "metadataUri", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "metadataUri")]
+        [System.Text.Json.Serialization.JsonPropertyName("metadataUri")]
         public string MetadataUri { get; set; }
 
         [DataMember(Name = "masterEdition", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "masterEdition")]
+        [System.Text.Json.Serialization.JsonPropertyName("masterEdition")]
         public bool MasterEdition { get; set; }
 
         [DataMember(Name = "isMutable", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "isMutable")]
+        [System.Text.Json.Serialization.JsonPropertyName("isMutable")]
         public bool IsMutable { get; set; }
 
         [DataMember(Name = "primarySaleHappened", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "primarySaleHappened")]
+        [System.Text.Json.Serialization.JsonPropertyName("primarySaleHappened")]
         public bool PrimarySaleHappened { get; set; }
 
         [DataMember(Name = "sellerFeeBasisPoints", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "sellerFeeBasisPoints")]
+        [System.Text.Json.Serialization.JsonPropertyName("sellerFeeBasisPoints")]
         public long SellerFeeBasisPoints { get; set; }
 
         [DataMember(Name = "updateAuthority", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "updateAuthority")]
+        [System.Text.Json.Serialization.JsonPropertyName("updateAuthority")]
         public string UpdateAuthority { get; set; }
     }
 }

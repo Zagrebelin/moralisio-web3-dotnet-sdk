@@ -18,14 +18,17 @@ namespace Moralis.StreamsApi.Models
         /// </summary>
         [DataMember(Name = "result", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "result")]
+        [System.Text.Json.Serialization.JsonPropertyName("result")]
         public List<Addresses> Result { get; set; }
 
         [DataMember(Name = "cursor", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "cursor")]
+        [System.Text.Json.Serialization.JsonPropertyName("cursor")]
         public string Cursor { get; set; }
 
         [DataMember(Name = "total", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "total")]
+        [System.Text.Json.Serialization.JsonPropertyName("total")]
         public BigInteger Total { get; set; }
     }
 }

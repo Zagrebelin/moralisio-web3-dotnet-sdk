@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "name", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "name")]
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
 		public string Name { get; set; }
 
 		/// <summary>
@@ -24,12 +25,14 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "symbol", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "symbol")]
+        [System.Text.Json.Serialization.JsonPropertyName("symbol")]
 		public string Symbol { get; set; }
 
 		/// <summary>
 		/// </summary>
 		[DataMember(Name = "token_uri", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "token_uri")]
+        [System.Text.Json.Serialization.JsonPropertyName("token_uri")]
 		public string TokenUri { get; set; }
 
 

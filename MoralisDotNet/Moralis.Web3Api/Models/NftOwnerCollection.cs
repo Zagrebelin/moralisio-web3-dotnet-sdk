@@ -16,6 +16,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "status", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "status")]
+        [System.Text.Json.Serialization.JsonPropertyName("status")]
 		public string Status { get; set; }
 
 		/// <summary>
@@ -24,6 +25,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "total", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "total")]
+        [System.Text.Json.Serialization.JsonPropertyName("total")]
 		public int? Total { get; set; }
 
 		/// <summary>
@@ -32,6 +34,7 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "page", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "page")]
+        [System.Text.Json.Serialization.JsonPropertyName("page")]
 		public int? Page { get; set; }
 
 		/// <summary>
@@ -40,12 +43,14 @@ namespace Moralis.Web3Api.Models
 		/// </summary>
 		[DataMember(Name = "page_size", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "page_size")]
+        [System.Text.Json.Serialization.JsonPropertyName("page_size")]
 		public int? PageSize { get; set; }
 
 		/// <summary>
 		/// </summary>
 		[DataMember(Name = "result", EmitDefaultValue = false)]
 		[JsonProperty(PropertyName = "result")]
+        [System.Text.Json.Serialization.JsonPropertyName("result")]
 		public List<NftOwner> Result { get; set; }
 
 

@@ -10,10 +10,13 @@ namespace Moralis.StreamsApi.Models
     {
         [DataMember(Name = "address", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "address")]
+        [System.Text.Json.Serialization.JsonPropertyName("address")]
         public string Address { get; set; }
 
         [DataMember(Name = "streamId", EmitDefaultValue = false)]
         [JsonProperty(PropertyName = "streamId", NullValueHandling = NullValueHandling.Ignore)]
+        [System.Text.Json.Serialization.JsonPropertyName("streamId")]
+        [System.Text.Json.Serialization.JsonIgnore]
         public string StreamId { get; set; }
     }
 }
