@@ -23,7 +23,8 @@ namespace Moralis.Web3Api.Models
 		avalanche_testnet = 0xa869,
 		fantom = 0xfa,
 		cronos = 0x19,
-		cronos_testnet = 0x152
+		cronos_testnet = 0x152,
+		base_mainnet  = 0x2105
 	};
 
 }
